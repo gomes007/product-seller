@@ -32,7 +32,8 @@ public class JwtProviderImpl implements JwtProvider {
 
 
     @Override
-    public String generateToken(UserPrinciple auth) {
+    public String generateToken(UserPrinciple auth)
+    {
         String authorities = auth.getAuthorities().stream()
                 .map(GrantedAuthority::getAuthority)
                 .collect(Collectors.joining(","));
