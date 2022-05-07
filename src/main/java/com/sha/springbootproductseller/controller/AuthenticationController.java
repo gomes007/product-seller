@@ -35,7 +35,4 @@ public class AuthenticationController {
         return new ResponseEntity<>(authenticationService.signInReturnJWT(user), HttpStatus.OK);
     }
 
-
-
-
 }

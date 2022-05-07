@@ -17,7 +17,6 @@ public class ProdutcServiceImpl implements ProductService {
     @Override
     public Product saveProduct(Product product) {
         product.setCreateTime(LocalDateTime.now());
-
         return productRepository.save(product);
     }
 
